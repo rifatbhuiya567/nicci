@@ -1,5 +1,23 @@
 (function () {
     "use-strict";
+
+    $(window).scroll(function(){
+        let scrolling = $(this).scrollTop();
+
+        if(scrolling > 80) {
+            $(".main-header").addClass("sticky-header")
+        }else{
+            $(".main-header").removeClass("sticky-header")
+        }
+    });
+
+    $(window).load(function () {
+        $('.ad-banner').show(500);
+    });
+
+    $('.ad-banner-content .close-btn button').on('click', function () {
+        $('.ad-banner').hide(500);
+    });
     
     $('#btn-search').on('click', function () {
         $('.header-searchbar').toggle(500);

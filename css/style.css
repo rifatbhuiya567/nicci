@@ -16,6 +16,13 @@ Table Of Content
 4. Enquiries CSS Start
 5. News CSS Start
 6. What We Do CSS Start
+7. About CSS Start
+8. Pass President CSS Start
+9. Honour Received CSS Start
+10. Membership CSS Start
+11. Bottom Slider CSS Start
+12. Ad CSS Start
+13. Footer CSS Start
 */
 
 :root { 
@@ -23,6 +30,7 @@ Table Of Content
     --primary_color: #1071cb;
     --secondary_color: rgba(16, 113, 203, 0.2);
     --dropdown_bg: #e4f2ff;
+    --footer_color: #d1dde9;
     --title_color: rgba(16, 113, 203, 0.7);
     --title2_color: #bec7cf;
     --we_do_hover_color: #c9e4ff;
@@ -182,7 +190,7 @@ body {
 
 .btn-fill,
 .btn-outline {
-    padding: 8px 24px;
+    padding: 8px 32px;
     text-transform: uppercase;
     border-radius: var(--round_sm);
     -webkit-border-radius: var(--round_sm);
@@ -229,6 +237,11 @@ body {
     letter-spacing: 2px;
 }
 
+.section-title-2 p {
+    color: var(--white_color);
+    font-size: var(--lg);
+}
+
 .section-title-2 h2 {
     text-transform: uppercase;
     font-size: var(--h1);
@@ -255,7 +268,27 @@ body {
 /* Common CSS End */
 
 .main-header {
-    box-shadow: .5px .5px 5px 0 rgba(0, 0, 0, 0.150);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--white_color);
+    box-shadow: .5px .5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-header.sticky-header {
+    animation: sticky-header 1 .7s ease-in-out;
+    -webkit-animation: sticky-header 1 .7s ease-in-out;
+}
+
+@keyframes sticky-header {
+    0% {
+        top: -40px;
+    }
+    100% {
+        top: 0;
+    }
 }
 
 .main-header .desktop {
@@ -681,7 +714,7 @@ body {
     z-index: 11;
     height: 32px;
     width: 32px;
-    line-height: 32px;
+    line-height: 28px;
     text-align: center;
     background-color: rgba(16, 113, 203, 0.1);
     border-radius: var(--round_full);
@@ -760,7 +793,7 @@ body {
     -o-transform: translateY(-50%);
     height: 32px;
     width: 32px;
-    line-height: 32px;
+    line-height: 28px;
     font-size: 16px;
     text-align: center;
     background-color: var(--white_color);
@@ -901,7 +934,7 @@ body {
     -o-transform: translateY(-50%);
     height: 32px;
     width: 32px;
-    line-height: 32px;
+    line-height: 28px;
     font-size: 16px;
     text-align: center;
     background-color: var(--white_color);
@@ -1055,7 +1088,7 @@ body {
 .about .world-gif {
     background: url("../images/world-gif.gif");
     opacity: 10%;
-    height: 500px;
+    height: 1500px;
     width: 700px;
     background-size: 700px;
     position: absolute;
@@ -1091,3 +1124,555 @@ body {
     width: 80%;
 }
 /* About CSS End */
+
+.past-presidents .prev,
+.past-presidents .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    height: 32px;
+    width: 32px;
+    line-height: 28px;
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--white_color);
+    border: 2px solid var(--primary_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    z-index: 3;
+}
+
+.past-presidents .prev:hover,
+.past-presidents .next:hover {
+    background-color: var(--secondary_color);
+}
+
+.past-presidents .prev {
+    left: -24px;
+}
+
+.past-presidents .next {
+    right: -24px;
+}
+
+.past-presidents .slick-dots {
+    position: absolute;
+    right: 8px;
+    bottom: -40px;
+}
+
+.past-presidents .slick-dots li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.past-presidents .slick-dots li button {
+    height: 12px;
+    width: 12px;
+    color: transparent;
+    border: none;
+    background-color: var(--secondary_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+
+.past-presidents .slick-dots li.slick-active button {
+    background-color: var(--primary_color);
+}
+
+.past-presidents-slider .item {
+    margin: 4px 8px;
+}
+
+.past-presidents-slider .item .img img {
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--round_sm);
+    -webkit-border-radius: var(--round_sm);
+    -moz-border-radius: var(--round_sm);
+    -ms-border-radius: var(--round_sm);
+    -o-border-radius: var(--round_sm);
+}
+/* Past President CSS End */
+
+.honours .prev,
+.honours .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    height: 32px;
+    width: 32px;
+    line-height: 28px;
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--white_color);
+    border: 2px solid var(--primary_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    z-index: 3;
+}
+
+.honours .prev:hover,
+.honours .next:hover {
+    background-color: var(--secondary_color);
+}
+
+.honours .prev {
+    left: -24px;
+}
+
+.honours .next {
+    right: -24px;
+}
+
+.honours .slick-dots {
+    position: absolute;
+    right: 8px;
+    bottom: -40px;
+}
+
+.honours .slick-dots li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.honours .slick-dots li button {
+    height: 12px;
+    width: 12px;
+    color: transparent;
+    border: none;
+    background-color: var(--secondary_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+
+.honours .slick-dots li.slick-active button {
+    background-color: var(--primary_color);
+}
+
+.honours-slider .item {
+    margin: 4px 8px;
+}
+
+.honours-slider .item .img img {
+    height: 300px;
+    padding: 4px;
+    border: 1px solid rgba(16, 113, 203, 0.2);
+    border-radius: var(--round_sm);
+    -webkit-border-radius: var(--round_sm);
+    -moz-border-radius: var(--round_sm);
+    -ms-border-radius: var(--round_sm);
+    -o-border-radius: var(--round_sm);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.honours-slider .item .img img:hover {
+    border: 1px solid rgba(16, 113, 203, 0.5);
+}
+/* Honours Received CSS End */
+
+.membership {
+    padding: 48px 0;
+    background-color: var(--primary_color);
+}
+
+.membership .membership-item {
+    padding: 0 32px;
+    color: var(--white_color);
+    border-right: 2px solid var(--white_color);
+}
+
+.membership .membership-item:first-child {
+    border-left: 2px solid var(--white_color);
+}
+
+.membership .membership-item .img img {
+    width: 100px;
+    height: 100px;
+}
+
+.membership .membership-item h5 {
+    text-transform: uppercase;
+}
+
+.membership .membership-item p.description {
+    font-size: var(--lg);
+}
+
+.membership .btn-fill {
+    color: var(--primary_color);
+    background-color: var(--white_color);
+}
+/* Membership CSS End */
+
+.bottom-slider .world-gif {
+    background: url("../images/world-gif.gif");
+    opacity: 10%;
+    height: 300px;
+    width: 700px;
+    background-size: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.btm-slider .prev,
+.btm-slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    height: 32px;
+    width: 32px;
+    line-height: 28px;
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--white_color);
+    border: 2px solid var(--primary_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    z-index: 3;
+}
+
+.btm-slider .prev:hover,
+.btm-slider .next:hover {
+    background-color: var(--secondary_color);
+}
+
+.btm-slider .prev {
+    left: -24px;
+}
+
+.btm-slider .next {
+    right: -24px;
+}
+
+.btm-slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.btm-slider .slick-dots li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.btm-slider .slick-dots li button {
+    height: 12px;
+    width: 12px;
+    color: transparent;
+    border: none;
+    background-color: var(--secondary_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+
+.btm-slider .slick-dots li.slick-active button {
+    background-color: var(--primary_color);
+}
+
+.bottom-card-slider .item {
+    height: 200px;
+    width: 100%;
+    border-radius: var(--round_sm);
+    -webkit-border-radius: var(--round_sm);
+    -moz-border-radius: var(--round_sm);
+    -ms-border-radius: var(--round_sm);
+    -o-border-radius: var(--round_sm);
+}
+
+.bottom-card-slider .item {
+    z-index: 1;
+    margin: 4px 8px;
+}
+
+.bottom-card-slider .item::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+    border-radius: var(--round_sm);
+    -webkit-border-radius: var(--round_sm);
+    -moz-border-radius: var(--round_sm);
+    -ms-border-radius: var(--round_sm);
+    -o-border-radius: var(--round_sm);
+    z-index: -1;
+}
+
+.bottom-card-slider .item .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 16px 8px 16px;
+    color: var(--white_color);
+}
+/* Bottom Slider CSS End */
+
+.ad-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.ad-banner::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ad-banner-content {
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    z-index: 102;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.ad-banner-content .close-btn {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+}
+
+.ad-banner-content .close-btn button {
+    height: 32px;
+    width: 32px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--white_color);
+    border: none;
+    border: 1px solid var(--black_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.ad-banner-content .close-btn button:hover {
+    background-color: gainsboro;
+}
+
+.ad-banner-content .close-btn svg {
+    height: 20px;
+    width: 20px;
+}
+
+.ad-banner-content .close-btn svg path {
+    fill: var(--text_color);
+}
+/* Ad CSS End */
+
+.main-footer {
+    padding: 48px 0;
+    background-color: var(--footer_color);
+}
+
+.main-footer .left {
+    width: 55%;
+}
+
+.main-footer .right {
+    width: 45%;
+}
+
+.main-footer .nav-items a {
+    color: var(--text_color);
+    padding-bottom: 24px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: var(--sm);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.main-footer .nav-items a:hover {
+    color: var(--primary_color);
+}
+
+.main-footer .nav-items a i {
+    display: inline-block;
+    font-size: 10px;
+    padding-right: 8px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.main-footer .nav-items a:hover i {
+    transform: translateX(4px);
+    -webkit-transform: translateX(4px);
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -o-transform: translateX(4px);
+}
+
+.main-footer .right h6 {
+    font-size: var(--sm);
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.main-footer .right address,
+.main-footer .right a,
+.main-footer .right p {
+    font-size: var(--sm);
+}
+
+.main-footer .right a {
+    color: var(--primary_color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.main-footer .right a:hover {
+    text-decoration: underline;
+}
+
+.main-footer .map {
+    background-color: var(--primary_color);
+    border-radius: var(--round_md);
+    -webkit-border-radius: var(--round_md);
+    -moz-border-radius: var(--round_md);
+    -ms-border-radius: var(--round_md);
+    -o-border-radius: var(--round_md);
+}
+
+.main-footer .map .iframe {
+    width: 57%;
+}
+
+.main-footer .map .iframe iframe {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: var(--round_md);
+    border-bottom-left-radius: var(--round_md);
+}
+
+.main-footer .map .details {
+    padding: 2;
+    width: 43%;
+    padding: 12px 20px;
+    color: var(--white_color);
+    font-size: var(--sm);
+}
+
+.main-footer .map .details h6 {
+    font-weight: 500;
+    font-size: var(--sm);
+}
+
+.main-footer .map .details p.days {
+    font-weight: 500;
+}
+
+.main-footer .social a {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--white_color);
+    font-size: 17px;
+    background-color: var(--primary_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+/* Footer CSS End */

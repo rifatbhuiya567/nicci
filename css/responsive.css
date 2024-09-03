@@ -1,0 +1,375 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    :root {
+        --h1: 38px;
+        --h2: 32px;
+        --h3: 27px;
+        --h4: 22px;
+        --h5: 18px;
+        --h6: 15px;
+        --lg: 15px;
+        --bs: 14px;
+        --sm: 13px;
+    }
+
+    .main-header .desktop .dropdown-items {
+        top: 44px;
+    }
+
+    .main-banner .slider-content {
+        height: 500px;
+    }
+
+    .main-banner .prev {
+        left: 12px;
+    }
+
+    .main-banner .next {
+        right: 12px;
+    }
+
+    .section-spacing {
+        margin: 48px 0;
+    }
+
+    .section-title .title-line {
+        width: 4%;
+    }
+
+    .news-slider .news-item {
+        height: 340px;
+    }
+
+    .what-we-do .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .we-do-item.w-100 {
+        width: 48.50% !important;
+    }
+
+    .we-do-item img {
+        width: 100px !important;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    :root {
+        --h1: 35px;
+        --h2: 29px;
+        --h3: 24px;
+        --h4: 20px;
+        --h5: 16px;
+        --h6: 14px;
+        --lg: 14px;
+        --bs: 13px;
+        --sm: 12px;
+    }
+
+    .main-banner .slider-content {
+        height: 420px;
+    }
+
+    .main-banner .prev {
+        left: 12px;
+    }
+
+    .main-banner .next {
+        right: 12px;
+    }
+
+    .section-spacing {
+        margin: 40px 0;
+    }
+
+    .section-title .title-line {
+        width: 6%;
+    }
+
+    .event-card-slider .img img {
+        height: 220px;
+    }
+
+    .news-slider .news-item {
+        height: 340px;
+    }
+
+    .what-we-do .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .we-do-item.w-100 {
+        width: 48.50% !important;
+    }
+
+    .we-do-item img {
+        width: 80px !important;
+        height: 80px;
+    }
+
+    .honours .slick-dots,
+    .past-presidents .slick-dots {
+        bottom: -26px;
+    }
+
+    .membership .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .membership-item {
+        margin: 8px 8px;
+        padding: 12px 20px !important;
+        width: 47%;
+        border: 2px solid var(--white_color);
+        border-radius: var(--round_md);
+        -webkit-border-radius: var(--round_md);
+        -moz-border-radius: var(--round_md);
+        -ms-border-radius: var(--round_md);
+        -o-border-radius: var(--round_md);
+    }
+
+    .membership .membership-item .img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btm-slider .slick-dots {
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .section-title h2 {
+        font-weight: 700;
+        font-size: var(--h2);
+    }
+
+    .about-aside {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    :root {
+        --h1: 30px;
+        --h2: 26px;
+        --h3: 22px;
+        --h4: 18px;
+        --h5: 15px;
+        --h6: 14px;
+        --lg: 14px;
+        --bs: 13px;
+        --sm: 12px;
+    }
+
+    .main-banner .slider-content {
+        height: 380px;
+    }
+
+    .main-banner .prev {
+        left: 12px;
+    }
+
+    .main-banner .next {
+        right: 12px;
+    }
+
+    .section-spacing {
+        margin: 40px 0;
+    }
+
+    .section-title .title-line {
+        width: 6%;
+    }
+
+    .event-card-slider .img img {
+        height: 240px;
+    }
+
+    .news-slider .news-item {
+        height: 340px;
+    }
+
+    .honours .slick-dots,
+    .past-presidents .slick-dots {
+        bottom: -26px;
+    }
+
+    .membership .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .membership-item {
+        margin: 8px 8px;
+        padding: 12px 20px !important;
+        width: 47%;
+        border: 2px solid var(--white_color);
+        border-radius: var(--round_md);
+        -webkit-border-radius: var(--round_md);
+        -moz-border-radius: var(--round_md);
+        -ms-border-radius: var(--round_md);
+        -o-border-radius: var(--round_md);
+    }
+
+    .membership .membership-item .img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btm-slider .slick-dots {
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .what-we-do .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .we-do-item img {
+        width: 80px !important;
+        height: 80px;
+    }
+
+    .about .my-5 .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .membership-item {
+        width: 100% !important;
+    }
+
+    .main-footer .map {
+        margin-top: 12px;
+    }
+
+    .main-footer .map .iframe iframe {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: var(--round_md);
+        border-bottom-left-radius: 0;
+        border-top-right-radius: var(--round_md);
+    }
+
+    .main-footer .map.d-flex {
+        flex-wrap: wrap;
+    }
+
+    .main-footer .map .iframe,
+    .main-footer .map .details {
+        width: 100%;
+    }
+
+    .about .world-gif,
+    .bottom-slider .world-gif {
+        width: 100%;
+    }
+
+    .ad-banner-content {
+        width: 90% !important;
+    }
+
+    .ad-banner-content .close-btn button {
+        height: 28px;
+        width: 28px;
+        line-height: 26px;
+    }
+
+    .ad-banner-content .close-btn svg {
+        height: 18px;
+        width: 18px;
+    }
+
+    .main-header .header-searchbar input {
+        height: 32px;
+    }
+
+    .main-header .header-searchbar .searchbar-btn {
+        height: 32px;
+    }
+
+    .main-header .header-searchbar {
+        padding: 16px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --h1: 27px;
+        --h2: 23px;
+        --h3: 20px;
+        --h4: 17px;
+        --h5: 14px;
+        --h6: 13px;
+        --lg: 12px;
+        --bs: 12px;
+        --sm: 11px;
+    }
+
+    .main-banner .slider-content {
+        height: 320px;
+    }
+
+    .prev,
+    .next {
+        display: none !important;
+    }
+
+    .section-spacing {
+        margin: 40px 0;
+    }
+
+    .section-title .title-line {
+        width: 2%;
+    }
+
+    .event-card-slider .img img {
+        height: 240px;
+    }
+
+    .news-slider .news-item {
+        height: 340px;
+    }
+
+    .honours .slick-dots,
+    .past-presidents .slick-dots {
+        bottom: -26px;
+    }
+
+    .membership .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .membership-item {
+        margin: 8px 8px;
+        padding: 12px 20px !important;
+        width: 47%;
+        border: 2px solid var(--white_color);
+        border-radius: var(--round_md);
+        -webkit-border-radius: var(--round_md);
+        -moz-border-radius: var(--round_md);
+        -ms-border-radius: var(--round_md);
+        -o-border-radius: var(--round_md);
+    }
+
+    .membership .membership-item .img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .honours-slider .item .img img {
+        height: 440px;
+    }
+
+    .btm-slider .slick-dots {
+        bottom: -30px;
+    }
+
+    .main-header .solid-bar {
+        font-size: 26px;
+    }
+
+    .main-footer {
+        padding: 32px 0;
+    }
+}
