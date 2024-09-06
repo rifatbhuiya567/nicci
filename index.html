@@ -708,76 +708,78 @@
             <div class="next">
                 <i class="fa-solid fa-angle-right"></i>
             </div>
-            <div class="banner-slider">
-                <div class="slider-content" style="background: url(images/banner/1.jpg) no-repeat center / cover;">
-                    <a class="h-100 w-100" href="#" target="_blank">
-                        <div class="container h-100">
-                            <div class="row h-100 align-items-center">
-                                <div class="col-lg-8">
-                                    <h2
-                                        class="text-uppercase"
-                                        data-animation="fadeInUp" 
-                                        data-delay="0.5s" 
-                                    >reimangining asean for a sustainable tomorrow</h2>
-                                    <h4 
-                                        class="text-uppercase mt-2"
-                                        data-animation="fadeInUp" 
-                                        data-delay="0.7s" 
-                                    >guest of honour</h4>
-                                    <h3 
-                                        class="text-capitalize mt-1"
-                                        data-animation="fadeInUp" 
-                                        data-delay="0.9s"
-                                    >mr x</h3>
-                                    <p 
-                                        class="my-1"
-                                        data-animation="fadeInUp" 
-                                        data-delay="1.1s"
-                                    >Deputy Prime Minister and Minister for Trade and Industry</p>
-                                    <p 
-                                        class="date"
-                                        data-animation="fadeInUp" 
-                                        data-delay="1.3s"
-                                    >29 August 2024 | Nepal</p>
+            <div id="particles-js">
+                <div class="banner-slider">
+                    <div class="slider-content" style="background: url(images/banner/1.jpg) no-repeat center / cover;">
+                        <a class="h-100 w-100" href="#" target="_blank">
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-lg-8">
+                                        <h2
+                                            class="text-uppercase"
+                                            data-animation="fadeInUp"
+                                            data-delay="0.5s"
+                                        >reimangining asean for a sustainable tomorrow</h2>
+                                        <h4
+                                            class="text-uppercase mt-2"
+                                            data-animation="fadeInUp"
+                                            data-delay="0.7s"
+                                        >guest of honour</h4>
+                                        <h3
+                                            class="text-capitalize mt-1"
+                                            data-animation="fadeInUp"
+                                            data-delay="0.9s"
+                                        >mr x</h3>
+                                        <p
+                                            class="my-1"
+                                            data-animation="fadeInUp"
+                                            data-delay="1.1s"
+                                        >Deputy Prime Minister and Minister for Trade and Industry</p>
+                                        <p
+                                            class="date"
+                                            data-animation="fadeInUp"
+                                            data-delay="1.3s"
+                                        >29 August 2024 | Nepal</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slider-content" style="background: url(images/banner/2.jpg) no-repeat center / cover;">
-                    <a class="h-100 w-100" href="#" target="_blank">
-                        <div class="container h-100">
-                            <div class="row h-100 align-items-center">
-                                <div class="col-lg-8">
-                                    <h2
-                                        class="text-uppercase"
-                                        data-animation="fadeInUp" 
-                                        data-delay="0.5s" 
-                                    >reimangining asean for a sustainable tomorrow</h2>
-                                    <h4 
-                                        class="text-uppercase mt-2"
-                                        data-animation="fadeInUp" 
-                                        data-delay="0.7s" 
-                                    >guest of honour</h4>
-                                    <h3 
-                                        class="text-capitalize mt-1"
-                                        data-animation="fadeInUp" 
-                                        data-delay="0.9s"
-                                    >mr x</h3>
-                                    <p 
-                                        class="my-1"
-                                        data-animation="fadeInUp" 
-                                        data-delay="1.1s"
-                                    >Deputy Prime Minister and Minister for Trade and Industry</p>
-                                    <p 
-                                        class="date"
-                                        data-animation="fadeInUp" 
-                                        data-delay="1.3s"
-                                    >29 August 2024 | Nepal</p>
+                        </a>
+                    </div>
+                    <div class="slider-content" style="background: url(images/banner/2.jpg) no-repeat center / cover;">
+                        <a class="h-100 w-100" href="#" target="_blank">
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-lg-8">
+                                        <h2
+                                            class="text-uppercase"
+                                            data-animation="fadeInUp"
+                                            data-delay="0.5s"
+                                        >reimangining asean for a sustainable tomorrow</h2>
+                                        <h4
+                                            class="text-uppercase mt-2"
+                                            data-animation="fadeInUp"
+                                            data-delay="0.7s"
+                                        >guest of honour</h4>
+                                        <h3
+                                            class="text-capitalize mt-1"
+                                            data-animation="fadeInUp"
+                                            data-delay="0.9s"
+                                        >mr x</h3>
+                                        <p
+                                            class="my-1"
+                                            data-animation="fadeInUp"
+                                            data-delay="1.1s"
+                                        >Deputy Prime Minister and Minister for Trade and Industry</p>
+                                        <p
+                                            class="date"
+                                            data-animation="fadeInUp"
+                                            data-delay="1.3s"
+                                        >29 August 2024 | Nepal</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -798,85 +800,169 @@
 
                 <div class="row mt-2 mt-lg-4 justify-content-center">
                     <div class="col-lg-11 mb-3">
-                        <ul class="d-flex justify-content-end gap-4">
-                            <li>
-                                <a href="#" class="btn-fill">events</a>
+                        <ul class="d-flex justify-content-end gap-4 nav" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="tab-btn active" id="events-tab" data-bs-toggle="tab" data-bs-target="#events-tab-pane" type="button" role="tab" aria-controls="events-tab-pane" aria-selected="true">events</button>
                             </li>
-                            <li>
-                                <a href="#" class="btn-outline">training</a>
+                            <li class="nav-item" role="presentation">
+                                <button class="tab-btn" id="training-tab" data-bs-toggle="tab" data-bs-target="#training-tab-pane" type="button" role="tab" aria-controls="training-tab-pane" aria-selected="false">training</button>
                             </li>
                         </ul>
                     </div>
+                </div>
 
-                    <div class="col-lg-11 event-card position-relative">
-                        <div class="prev event-prev">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </div>
-                        <div class="next event-next">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </div>
-                        <div class="event-card-slider">
-                            <div class="card-item">
-                                <div class="img">
-                                    <a href="#" class="h-100 w-100">
-                                        <img src="images/event.jpg" class="w-100" alt="event image">
-                                    </a>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="events-tab-pane" role="tabpanel" aria-labelledby="events-tab" tabindex="0">
+                        <div class="events-tab-content">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-11 event-card position-relative">
+                                    <div class="prev event-prev">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </div>
+                                    <div class="next event-next">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="event-card-slider">
+                                        <div class="card-item">
+                                            <div class="img">
+                                                <a href="#" class="h-100 w-100">
+                                                    <img src="images/event.jpg" class="w-100" alt="event image">
+                                                </a>
+                                            </div>
+                                            <div class="content mt-3">
+                                                <h5 class="item-title">
+                                                    <a href="#">India-Nepal Economic Partnership Summit 2023</a>
+                                                </h5>
+                                                <p class="date text-uppercase mt-2">18 may 2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="img">
+                                                <a href="#" class="h-100 w-100">
+                                                    <img src="images/event.jpg" class="w-100" alt="event image">
+                                                </a>
+                                            </div>
+                                            <div class="content mt-3">
+                                                <h5 class="item-title">
+                                                    <a href="#">India-Nepal Economic Partnership Summit 2023</a>
+                                                </h5>
+                                                <p class="date text-uppercase mt-2">18 may 2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="img">
+                                                <a href="#" class="h-100 w-100">
+                                                    <img src="images/event.jpg" class="w-100" alt="event image">
+                                                </a>
+                                            </div>
+                                            <div class="content mt-3">
+                                                <h5 class="item-title">
+                                                    <a href="#">India-Nepal Economic Partnership Summit 2023</a>
+                                                </h5>
+                                                <p class="date text-uppercase mt-2">18 may 2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="img">
+                                                <a href="#" class="h-100 w-100">
+                                                    <img src="images/event.jpg" class="w-100" alt="event image">
+                                                </a>
+                                            </div>
+                                            <div class="content mt-3">
+                                                <h5 class="item-title">
+                                                    <a href="#">India-Nepal Economic Partnership Summit 2023</a>
+                                                </h5>
+                                                <p class="date text-uppercase mt-2">18 may 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content mt-3">
-                                    <h5 class="item-title">
-                                        <a href="#">India-Nepal Economic Partnership Summit 2023</a>
-                                    </h5>
-                                    <p class="date text-uppercase mt-2">18 may 2023</p>
+
+                                <div class="col-lg-11 text-end mt-3 px-3">
+                                    <a href="#" class="btn-fill">see all events</a>
                                 </div>
-                            </div>
-                            <div class="card-item">
-                                <div class="img">
-                                    <a href="#" class="h-100 w-100">
-                                        <img src="images/event.jpg" class="w-100" alt="event image">
-                                    </a>
-                                </div>
-                                <div class="content mt-3">
-                                    <h5 class="item-title">
-                                        <a href="#">India-Nepal Economic Partnership Summit 2023</a>
-                                    </h5>
-                                    <p class="date text-uppercase mt-2">18 may 2023</p>
-                                </div>
-                            </div>
-                            <div class="card-item">
-                                <div class="img">
-                                    <a href="#" class="h-100 w-100">
-                                        <img src="images/event.jpg" class="w-100" alt="event image">
-                                    </a>
-                                </div>
-                                <div class="content mt-3">
-                                    <h5 class="item-title">
-                                        <a href="#">India-Nepal Economic Partnership Summit 2023</a>
-                                    </h5>
-                                    <p class="date text-uppercase mt-2">18 may 2023</p>
-                                </div>
-                            </div>
-                            <div class="card-item">
-                                <div class="img">
-                                    <a href="#" class="h-100 w-100">
-                                        <img src="images/event.jpg" class="w-100" alt="event image">
-                                    </a>
-                                </div>
-                                <div class="content mt-3">
-                                    <h5 class="item-title">
-                                        <a href="#">India-Nepal Economic Partnership Summit 2023</a>
-                                    </h5>
-                                    <p class="date text-uppercase mt-2">18 may 2023</p>
+
+                                <div class="col-lg-11 py-4 px-3">
+                                    <hr>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="tab-pane fade" id="training-tab-pane" role="tabpanel" aria-labelledby="training-tab" tabindex="0">
+                        <div class="training-tab-content">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-11 training-card position-relative">
+                                    <div class="prev training-prev">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </div>
+                                    <div class="next training-next">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="training-card-slider">
+                                        <div class="card-item">
+                                            <div class="img">
+                                                <a href="#" class="h-100 w-100">
+                                                    <img src="images/training.jpg" class="w-100" alt="training image">
+                                                </a>
+                                            </div>
+                                            <div class="content mt-3">
+                                                <h5 class="item-title">
+                                                    <a href="#">India-Nepal Economic Partnership Summit 2023</a>
+                                                </h5>
+                                                <p class="date text-uppercase mt-2">18 may 2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="img">
+                                                <a href="#" class="h-100 w-100">
+                                                    <img src="images/training.jpg" class="w-100" alt="training image">
+                                                </a>
+                                            </div>
+                                            <div class="content mt-3">
+                                                <h5 class="item-title">
+                                                    <a href="#">India-Nepal Economic Partnership Summit 2023</a>
+                                                </h5>
+                                                <p class="date text-uppercase mt-2">18 may 2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="img">
+                                                <a href="#" class="h-100 w-100">
+                                                    <img src="images/training.jpg" class="w-100" alt="training image">
+                                                </a>
+                                            </div>
+                                            <div class="content mt-3">
+                                                <h5 class="item-title">
+                                                    <a href="#">India-Nepal Economic Partnership Summit 2023</a>
+                                                </h5>
+                                                <p class="date text-uppercase mt-2">18 may 2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="img">
+                                                <a href="#" class="h-100 w-100">
+                                                    <img src="images/training.jpg" class="w-100" alt="training image">
+                                                </a>
+                                            </div>
+                                            <div class="content mt-3">
+                                                <h5 class="item-title">
+                                                    <a href="#">India-Nepal Economic Partnership Summit 2023</a>
+                                                </h5>
+                                                <p class="date text-uppercase mt-2">18 may 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="col-lg-11 text-end mt-3 px-3">
-                        <a href="#" class="btn-fill">see all events</a>
-                    </div>
+                                <div class="col-lg-11 text-end mt-3 px-3">
+                                    <a href="#" class="btn-fill">see all training</a>
+                                </div>
 
-                    <div class="col-lg-11 py-4 px-3">
-                        <hr>
+                                <div class="col-lg-11 py-4 px-3">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1382,7 +1468,7 @@
     <!-- Main End -->
 
     <!-- Ad Banner Start -->
-    <div class="ad-banner">
+    <!-- <div class="ad-banner">
         <div class="ad-banner-content position-relative">
             <div class="ad-img">
                 <img src="images/ad.jpg" class="w-100" alt="ad image">
@@ -1396,7 +1482,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Ad Banner End -->
 
     <!-- Footer Start -->
@@ -1568,6 +1654,7 @@
     <script>
         // Event Card Slider
         $('.event-card-slider').slick({
+            refresh: true,
             slidesToShow: 3,
             slidesToScroll: 3,
             dots: true,
@@ -1589,6 +1676,42 @@
                     }
                 }
             ]
+        });
+    </script>
+    <script>
+        // Training Card Slider
+        $('.training-card-slider').slick({
+            refresh: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: true,
+            prevArrow: '.training-prev',
+            nextArrow: '.training-next',
+            responsive: [
+                {
+                breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+        $('#events-tab').on('click', function () {
+            $('.events-card-slider').slick('refresh');
+        });
+
+        $('#training-tab').on('click', function () {
+            $('.training-card-slider').slick('refresh');
         });
     </script>
     <script>
@@ -1740,6 +1863,28 @@
 
     <!-- LightBox JS -->
     <script src="js/lightbox.min.js"></script>
+
+    <!-- Particles JS -->
+    <script src="js/particles.js"></script>
+    <script src="js/particles/app.js"></script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script> -->
 
     <!-- Main Script Sheet -->
     <script src="js/script.js"></script>
